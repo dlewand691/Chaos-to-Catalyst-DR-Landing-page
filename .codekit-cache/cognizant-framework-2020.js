@@ -1,4 +1,5 @@
 // @codekit-prepend 'jquery/dist/jquery.min.js'
+// #codekit-prepend 'foundation-sites/dist/js/foundation.min.js'
 
 
 // ======================================================================
@@ -166,7 +167,10 @@ $(document).ready(function() {
 
 $(document).ready(function() {
   AOS.init({
-    // startEvent: "load"
+    duration: 750,
+    // mirror: false,
+    startEvent: "load",
+    offset: "150"
   });
 });
 
@@ -184,12 +188,12 @@ var mySwiper = new Swiper(".swiper-container", {
   // loop: true,
   // autoHeight: true,
   // centeredSlides: true,
-  // grabCursor: true,
-  // preloadImages: false,
-  // lazy: {
-  //   loadPrevNext: true,
-  //   loadPrevNextAmount: 5
-  // },
+  grabCursor: true,
+  preloadImages: false,
+  lazy: {
+    loadPrevNext: true,
+    loadPrevNextAmount: 5
+  },
   loadOnTransitionStart: true,
   keyboard: {
     enabled: true
@@ -207,3 +211,14 @@ var mySwiper = new Swiper(".swiper-container", {
   // observeParents: true
 });
 // -----  End of SWIPER  -----------------------------------
+
+
+// ===================================================================================
+// HAMBURGER ICON ACTIVE/INACTIVE
+// ===================================================================================
+$("#primary-nav").on("show.zf.dropdown", function() {
+  $(".hamburger").addClass("is-active");
+});
+$("#primary-nav").on("hide.zf.dropdown", function() {
+  $(".hamburger").removeClass("is-active");
+});

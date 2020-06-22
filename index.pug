@@ -1,31 +1,84 @@
-doctype html
-html.no-js(lang='en')
-  head
-    meta(charset='utf-8')
-    meta(http-equiv='x-ua-compatible' content='ie=edge')
-    meta(name="viewport" content="width=device-width initial-scale=1")
-    title Cognizant
-    link(rel='stylesheet' href='css/app.css')
+extends _template.pug
+include _mixins.pug
 
-    // ==============================  FAVICONS  ==============================
-    link(rel="apple-touch-icon" sizes="180x180" href="/favicons/apple-touch-icon.png")
-    link(rel="icon" type="image/png" sizes="32x32" href="/favicons/favicon-32x32.png")
-    link(rel="icon" type="image/png" sizes="194x194" href="/favicons/favicon-194x194.png")
-    link(rel="icon" type="image/png" sizes="192x192" href="/favicons/android-chrome-192x192.png")
-    link(rel="icon" type="image/png" sizes="16x16" href="/favicons/favicon-16x16.png")
-    link(rel="manifest" href="/favicons/site.webmanifest")
-    link(rel="mask-icon" href="/favicons/safari-pinned-tab.svg" color="#0033a0")
-    link(rel="shortcut icon" href="/favicons/favicon.ico")
-    meta(name="msapplication-TileColor" content="#0033a0")
-    meta(name="msapplication-TileImage" content="/favicons/mstile-144x144.png")
-    meta(name="msapplication-config" content="/favicons/browserconfig.xml")
-    meta(name="theme-color" content="#ffffff")
+block vars
+  - var pageTitle = "CHANGE_ME"
+  - var metaDescription= "CHANGE_ME"
+  - var metaKeywords= "CHANGE_ME"
 
-  body
-    .row
-      .columns
-        h1 Testing testing
+block content
+  .lazyload.bg-size-cover.pt3.flex-container.align-middle(data-sizes="auto" data-bg="images/CtoC-DR-landing-assets/bg-marquee-pdf.jpg")
+    .grid-container
+      .grid-x.grid-padding-x.mb2.medium-mb3.hide-for-small-only
+        .cell
+          img.lazyload(data-sizes="auto" data-src="images/cog-logo-white.svg" style="width: 200px;" data-aos="fade-down")
+      .grid-x.grid-padding-x
+        .cell.small-order-2.large-order-1.auto(data-aos="fade-right")
+          h2.text-white.medium-mb2 From Chaos to Catalyst
+          h5.text-normal.text-blue-bright.medium-mb3 Read our report to understand the 8 opportunities your company should embrace post-pandemic
+          a.button.arrow.mb2(href="") READ THE REPORT
+        .cell.small-order-1.large-order-2.large-8.medium-mbn6.large-mrn2(data-aos="fade-left")
+          img.lazyload.large-mtn2(data-sizes="auto" data-src="images/CtoC-DR-landing-assets/chaos-to-catalyst-cover.png")
+
+  .bg-blue-15.py2.medium-py5
+    .grid-container
+      .grid-x.grid-padding-x
+        .cell
+          h2 The world keeps changing. 
+            br.hide-for-small-only
+            | Are you keeping up?
+          h5.text-normal.large-mb2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Earum sed dolore iusto praesentium, amet, quidem pariatur ea autem voluptatem doloribus, doloremque aspernatur suscipit, quod expedita adipisci rerum. Qui quae, vel.
+          .p1.bg-blue-30 
+            p.m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae veniam, totam optio quam beatae! Incidunt quia, ea iusto tempore?
+          .p1.bg-blue-15 
+            p.m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae veniam, totam optio quam beatae! Incidunt quia, ea iusto tempore?
+          .p1.bg-blue-30 
+            p.m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Nesciunt quae veniam, totam optio quam beatae! Incidunt quia, ea iusto tempore?
+
+  .grid-container.py2.medium-py5
+    .grid-x.grid-margin-x
+      .cell.mb2
+        p.small.pb1.bd-b-black-1.inline-block CONTINUE EXPLORING
+
+      .grid-x.grid-padding-x.small-up-1.medium-up-3
+        .cell.flex-container.flex-dir-column.align-justify(data-aos="fade-right")
+          div
+            img.lazyload.mb1(data-sizes="auto" data-src="images/FPO.jpg")
+            p.small.text-blue-light LOREM IPSUM
+            h6 Lorem ipsum dolor sit amet
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum iusto, error impedit quasi recusandae repudiandae excepturi neque. Deleniti, officia, eius.
+          div
+            a.arrow(href="") LEARN MORE
+        .cell.flex-container.flex-dir-column.align-justify(data-aos="fade-up")
+          div
+            img.lazyload.mb1(data-sizes="auto" data-src="images/FPO.jpg")
+            p.small.text-blue-light LOREM IPSUM
+            h6 Lorem ipsum dolor sit amet Lorem ipsum dolor sit amet.
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit. Harum iusto, error impedit quasi recusandae repudiandae excepturi neque. Deleniti, officia, eius. Lorem ipsum dolor sit amet.
+          div
+            a.arrow(href="") LEARN MORE
+        .cell.flex-container.flex-dir-column.align-justify(data-aos="fade-left")
+          div
+            img.lazyload.mb1(data-sizes="auto" data-src="images/FPO.jpg")
+            p.small.text-blue-light LOREM IPSUM
+            h6 Lorem ipsum dolor sit amet
+            p Lorem ipsum dolor sit amet, consectetur adipisicing elit.
+          div
+            a.arrow(href="") LEARN MORE
+
+  .bg-blue.text-white.py3
+    .grid-container
+      .grid-x.grid-padding-x.flex-container.align-middle
+        .cell.auto(data-aos="fade-left")
+          h2 Ready to learn more?
+          p.large-m0 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Magni, officia.
+
+        .cell.large-4(data-aos="fade-right")
+          a.button.arrow.m0.expanded.text-left(href="") PLAY VIDEO
+          hr.white
+          a.arrow.m0.text-white(href="") Contact Us
+          hr.white
+          a.arrow.m0.text-white(href="") Cognizant.com
 
 
-    a#scrollUp(href="#" title="Back to top")
-    script(src='js/min/app-min.js')
+block append extraScripts

@@ -1,0 +1,46 @@
+// ===================================================================================
+// FOOTER ICONS BAR
+// ===================================================================================
+.footer-icons-bar.bg-gray-lighter.p-half
+  .grid-container
+    .grid-x.grid-padding-x.align-middle
+      .cell.medium-shrink(data-attribute="footerBar")
+        .bg-none.m0.flex-wrap
+          a.h5.button.bg-none.p-half.m0.text-green(href="http://www.linkedin.com/company/cognizant" target="_blank" rel="noopener" title="LinkedIn")
+            i.logo-linkedin
+          a.h5.button.bg-none.p-half.m0.text-green(href="http://twitter.com/cognizant" target="_blank" rel="noopener" title="Twitter")
+            i.logo-twitter-bird
+          a.h5.button.bg-none.p-half.m0.text-green(href="http://www.facebook.com/Cognizant" target="_blank" rel="noopener" title="Facebook")
+            i.logo-facebook
+          a.h5.button.bg-none.p-half.m0.text-green(href="https://www.instagram.com/cognizant" target="_blank" rel="noopener" title="Instagram")
+            i.logo-instagram
+          a.h5.button.bg-none.p-half.m0.text-green(href="https://www.youtube.com/cognizant" target="_blank" rel="noopener" title="YouTube")
+            i.logo-youtube-clip
+          //
+            <a href="/Pages/rss.aspx" target="_blank" rel="noopener" title="RSS" class="button bg-gray-light3 p-half"><h5 class="m0 text-green"><i class="rss-feed-solid"></i></h5></a>
+
+      // ===================================================================================
+      // FOOTER LINKS
+      // ===================================================================================
+      .cell.auto
+        ul.menu.medium-align-right.small
+          //- li
+            a(href="/sitemap" title="Sitemap") AI Blogs
+          li
+            a.strong(href="/sitemap" title="Sitemap") Sitemap
+          li
+            a.strong(href="/terms-conditions" title="Terms") Terms
+          //- li
+            a(href="/terms-conditions" title="Terms") Tax Strategy
+          li
+            a.strong(href="/privacy-notice" title="Privacy Notice") Privacy Notice
+          li
+            a.strong(href="/cookie-notice" title="Cookie Notice") Cookie Notice
+          //- li
+            a(href="/cookie-notice" title="Cookie Notice") Gender Pay Gap
+          li.align-self-middle
+            span.m0.medium-pl-half
+              | &copy;
+              script.
+                document.write(new Date().getFullYear())
+              |  Cognizant, all rights reserved
