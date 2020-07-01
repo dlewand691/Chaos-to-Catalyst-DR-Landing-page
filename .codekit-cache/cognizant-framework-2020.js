@@ -79,7 +79,8 @@ $(document).foundation();
 // ██      ██    ██ ██  ██  ██ ██      ██    ██ ██  ██ ██ ██      ██  ██ ██    ██         ██
 //  ██████  ██████  ██      ██ ██       ██████  ██   ████ ███████ ██   ████    ██    ███████
 // ======================================================================
-// @codekit-append 'accordions.js'
+// @codekit-append 'gradient-background-steps.js'
+// @codekit-append 'gradient-steps-tabs.js'
 
 Foundation.Abide.defaults.patterns["dashes_only"] = /^[0-9-+]*$/;
 
@@ -211,14 +212,3 @@ var mySwiper = new Swiper(".swiper-container", {
   // observeParents: true
 });
 // -----  End of SWIPER  -----------------------------------
-
-
-// ===================================================================================
-// HAMBURGER ICON ACTIVE/INACTIVE
-// ===================================================================================
-$("#primary-nav").on("show.zf.dropdown", function() {
-  $(".hamburger").addClass("is-active");
-});
-$("#primary-nav").on("hide.zf.dropdown", function() {
-  $(".hamburger").removeClass("is-active");
-});

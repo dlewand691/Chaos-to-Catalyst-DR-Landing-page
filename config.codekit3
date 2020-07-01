@@ -1050,7 +1050,7 @@
 		},
 	"/images/CtoC-DR-landing-assets/bg-marquee-pdf.jpg": {
 		"ft": 16384,
-		"iS": 101647,
+		"iS": 96877,
 		"jF": 2,
 		"oA": 0,
 		"oAP": "/_BUILD/images/CtoC-DR-landing-assets/bg-marquee-pdf.jpg",
@@ -1112,7 +1112,7 @@
 		"oIPL": 0,
 		"opt": 1,
 		"oT": 1,
-		"q": 80
+		"q": 75
 		},
 	"/images/CtoC-DR-landing-assets/errors.txt": {
 		"cB": 0,
